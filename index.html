@@ -110,12 +110,72 @@ I must focus on changing the database to MySQL for the next enhancements.
 <hr>	
 
 <h2>Enhancement Two: Algorithms and Data Structures</h2>
-<p>&#127891; Under Construction</p>
+<p>&#127891; <b>About The Artifact</b><br>
+The Grazioso Salvare application was developed to create meaningful insights from animal data. This artifact was created in early 2026.  The artifact was a
+project from SNHU (CS 340) and shows use of CRUD database operations, MCV organization, and Data Analysis Techniques.  A logo appears at the top and there is
+a data table that displays the data. There are filtering options and radio items for convenient filtering. There is a pie chart to show breed options, a map to
+locate and identify a particular animal, and a bar chart to show outcomes based on radio item selection.
+<br><br>
+<b>Skills and Abilities Acquired from the Artifact</b><br>
+I selected this artifact because it was originally using a MongoDB database and I want to give the option to switch to a MySQL database. To do this work, 
+it requires knowledge of the MySQL language. It also requires creating algorithms and structures that work with this structured database. The artifact was
+improved by creating a structured table with appropriate datatypes (VARCHAR, DECIMAL, UNSIGNED INT) and ACID compliance. ACID stands for Atomicity
+(all or nothing), Consistency, Isolation, and Durability which is great for companies that require a great deal of accuracy and care with their data. 
+MongoDB uses a B-Tree structure and MySQL uses a B+Tree structure (Kagoshima, 2025). The speeds in Big O notation are similar for each database, O(log n),
+for most operations (Kagoshima, 2025). Optimization of accuracy is achieved with the MySQL database.  However, using the MongoDB database gives the opportunity
+for sharding, or horizontal scaling.  MySQL, typically using vertical scaling.
+<br><br>
+<b>Course Outcomes Met</b><br>
+I have met all outcomes with this enhancement. I have included significant comments and updates to the ReadMe file for communication and collaboration,
+which meets the first two outcomes. I discussed the advantages and disadvantages of switching from MongoDB to MySQL. I discussed the tradeoffs and provided 
+computing solutions for the alternatives available. I created test files to demonstrate the coding solutions to deliver value and meet industry-specific goals.
+I created role-based access with the MySQL database and kept security in mind. I also defined the datatypes in the table, enhancing security. 
+<br><br>	
+<b>Challenges and Reflection</b><br>
+The first thing I had to do was to get the csv file into a MySQL database.  I created a database and a table. I needed to define the datatypes for the columns
+of the table. I created a file that imported pandas and it counted the datatypes for me. I converted those datatypes to ones that are specific to MySQL and 
+entered them using the command prompt.  I also created a user and specified the user’s role for enhanced security. I didn’t want to use the root, which has
+all access, so I limited the access for data integrity and protection. Next, I created a file to test the database and specific queries used for the web 
+application. One of the challenges was in trying to gauge the number of characters (memory space) that would be required for each element in the table. The
+nice thing about MySQL, however, is that the age range was easy to implement. The biggest challenge was that loading local data was disabled and I had to
+set the Global local_infile variable to 1, temporarily, to download the csv file and then change it back to 0 afterwards. For security purposes, it should
+be changed back to 0.
+</p>
 <a href="Gualco Capstone Project Enhancement 2.zip" target="_blank">Click to view Enhancement Two</a>
 <hr>	
 
 <h2>Enhancement Three: Databases</h2>
-<p>&#127891; Under Construction</p>
+<p>&#127891; <b>About The Artifact</b><br>
+The Grazioso Salvare application was developed to create meaningful insights from animal data. This artifact was created in early 2026. The artifact was
+a project from SNHU (CS 340) and shows use of CRUD database operations, MCV organization, and Data Analysis Techniques.  A logo appears at the top and there
+is a data table that displays the data. There are filtering options and radio items for convenient filtering. There is a pie chart to show breed options, a
+map to locate and identify a particular animal, and a bar chart to show outcomes based on radio item selection.
+<br><br>
+<b>Skills and Abilities Acquired from the Artifact</b><br>
+This artifact was chosen because it uses MongoDB and I wanted to give the option to switch to a MySQL database.  There are advantages and disadvantages
+to both databases and it was important to allow for alternatives. MySQL is used by companies that require ACID or extra care about accuracy, with the data.
+MySQL scales vertically, however, and MongoDB scales horizontally. The advantage of MongoDB is that the database is very flexible. MySQL is more defined and
+structured. There are uses for both and I felt that it is important to have both available. I also improved the map on this application to center the marker
+on the selected animal and to update regularly. This weeded out a bug that was frustrating the user. I also created test scripts for the CRUD operations
+for MySQL. This application uses the Read functionality of the CRUD module. The user doesn’t have a way to engage in an SQL injection attack, so there is a
+nice level of security by using the radio items for the specific searches.
+<br><br>
+<b>Course Outcomes Met</b><br>
+I updated the ReadMe file to incorporate the MySQL database and this fulfills the first two outcomes for building collaboration and designing communications
+that are for specific audiences and technical in nature. The options to use either database, MongoDB and MySQL, demonstrates the outcomes that allows for
+design trade-offs to be considered and delivers value for industry-specific goals. Keeping the inputs from allowing SQL injection attacks demonstrates the
+outcome of keeping security in mind. Also, fixing bugs, such as the map marker updating correctly is always a good security measure. The database was fixed 
+with a username and password and role-based access was created. This prevents unauthorized access to the database and limits the features that may be accessed
+to the necessary functions.
+<br><br>
+<b>Challenges and Reflection</b><br>
+One of the big challenges was that the table was showing, but the visualizations weren’t there. After observing the table, I realized that it didn’t have
+column headers, so I added a separate line to get the column headers and put them in the dataframe. Then, it started working. I noticed that there was a
+problem with the map. Originally, the marker wasn’t centered on the screen for the selected animal and I had to manually manipulate the map location. I 
+changed the code to center the selected animal, with its coordinates. Then I noticed that clicking the marker would add a pop up for the animal name, but
+the next selected animal would not be updated to a new marker placement until the marker was clicked a second time. I fixed this by wrapping the map in
+html.div and adding a key for the single row. When the key changes, a new map is rendered. Now, it works as expected.  
+</p>
 <a href="Gualco Capstone Project Enhancement 3.zip" target="_blank">Click to view Enhancement Three</a>
 <hr>	
 
