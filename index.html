@@ -20,6 +20,12 @@ p    {color: black;}
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	gap: 15px;
+	align-items: start;
+}
+.image-container .image-pair img{
+	width: 100%;
+	height: auto;
+	display: block;
 }
 </style>
 	
@@ -263,12 +269,12 @@ Figure 11 shows the beginning of the ReadMe file that communicates the details t
 In my graphics class, my project was to recreate some real-life objects and make 3D graphics with lighting and textures added.
 In this project, I created a mug for coffee, an abacus, a pencil and a q-tip. The camera moved left, right, up, down, forward and backwards.
 <br><br>
-<div class="image-container" style="width: 48%;">
-	<figure>
+<div class="image-container">
+	<figure class="image-pair">
 	<img src="cs330Project.jpg" alt="The original photo" style="max-width: 30%; height: auto;">
 	<br>
 	Figure 12 shows the original photo that was replicated with OpenGL.</figure>
-	<figure>
+	<figure class="image-pair">
 	<a href="https://youtube.com/shorts/6nrQVIIJTZg" target="_blank" style="font-size: 24px;">
 		<br><br>
 		<img src="graphics.png" alt="Watch the graphics video" style="max-width: 100%; height: auto;"><br>Click to view the Graphics Video</a></figure>
