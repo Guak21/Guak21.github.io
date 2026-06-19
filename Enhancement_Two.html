@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Enhancement Two</title>
+    <style>
+      
+    </style>
+  </head>
+  <body>
+<h2>Enhancement Two: Algorithms and Data Structures</h2>
+<p><b>Skills and Abilities Acquired from the Artifact</b><br>
+I selected this artifact because it was originally using a MongoDB database and I want to give the option to switch to a MySQL database. To do this work, 
+it requires knowledge of the MySQL language. It also requires creating algorithms and structures that work with this structured database. The artifact was
+improved by creating a structured table with appropriate datatypes (VARCHAR, DECIMAL, UNSIGNED INT) and ACID compliance. ACID stands for Atomicity
+(all or nothing), Consistency, Isolation, and Durability which is great for companies that require a great deal of accuracy and care with their data. 
+MongoDB uses a B-Tree structure and MySQL uses a B+Tree structure
+<a href="https://medium.com/@a.kago1988/why-and-when-mongodb-is-faster-than-mysql-a-mathematical-analysis-2373ab9f6936" target="_blank">(Kagoshima, 2025)</a>. 
+The speeds in Big O notation are similar for each database, O(log n), for most operations 
+<a href="https://medium.com/@a.kago1988/why-and-when-mongodb-is-faster-than-mysql-a-mathematical-analysis-2373ab9f6936" target="_blank">(Kagoshima, 2025)</a>. 
+Optimization of accuracy is achieved with the MySQL database. However, using the MongoDB database gives the opportunity for sharding, or horizontal scaling.
+MySQL, typically using vertical scaling.
+<br><br>
+<b>Course Outcomes Met</b><br>
+I have met all outcomes with this enhancement. I have included significant comments and updates to the ReadMe file for communication and collaboration,
+which meets the first two outcomes. I discussed the advantages and disadvantages of switching from MongoDB to MySQL. I discussed the tradeoffs and provided 
+computing solutions for the alternatives available. I created test files to demonstrate the coding solutions to deliver value and meet industry-specific goals.
+I created role-based access with the MySQL database and kept security in mind. I also defined the datatypes in the table, enhancing security. 
+<br><br>	
+<b>Challenges and Reflection</b><br>
+The first thing I had to do was to get the csv file into a MySQL database. I created a database and a table. I needed to define the datatypes for the columns
+of the table. I created a file that imported pandas and it counted the datatypes for me. I converted those datatypes to ones that are specific to MySQL and 
+entered them using the command prompt. I also created a user and specified the user’s role for enhanced security. I didn’t want to use the root, which has
+all access, so I limited the access for data integrity and protection. Next, I created a file to test the database and specific queries used for the web 
+application. One of the challenges was in trying to gauge the number of characters (memory space) that would be required for each element in the table. The
+nice thing about MySQL, however, is that the age range was easy to implement. The biggest challenge was that loading local data was disabled and I had to
+set the Global local_infile variable to 1, temporarily, to download the csv file and then change it back to 0 afterwards. For security purposes, it should
+be changed back to 0.
+<br><br>
+<a href="Gualco Capstone Project Enhancement 2.zip" target="_blank" style="font-size: 24px;">Click to view Enhancement Two</a>
+<br><br>
+<img src="Screenshot create user and privileges.png" alt="Screenshot of User Creation and Role-based Privileges" style="max-width: 100%; height: auto;">
+<br>
+Figure 6 shows user creation and role-based privileges being defined.
+<br><br>
+<img src="Screenshot sql table.png" alt="Screenshot of the sql table" style="max-width: 100%; height: auto;">
+<br>
+Figure 7 shows the MySQL table that was designed with the specific datatypes and memory allocation.
+<br><br>
+</p>	
+<hr>	
+</body>
+</html>
